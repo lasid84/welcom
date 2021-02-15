@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_lottoNo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="2dp"
+        android:text="21"
+        android:textSize="15sp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#000000"
+        android:background="@drawable/circle_normal"
+        />
+
+    <TextView
+        android:id="@+id/tv_lottoColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:text="red"
+        />
+
+    <TextView
+        android:id="@+id/tv_clickFlag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:text="Y"
+        />
+
+</LinearLayout>

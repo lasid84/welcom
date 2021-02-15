@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#4F4C4D"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="2020.04.11"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffff"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="906"
+            android:textSize="80sp"
+            android:gravity="center_horizontal"
+            android:textColor="#ffff"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="8"
+            >
+
+            <ImageView
+                android:id="@+id/img_firstNo"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:src="@drawable/no1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:id="@+id/img_secondNo"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:src="@drawable/no12"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:id="@+id/img_thirdNo"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:src="@drawable/no19"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:id="@+id/img_fourthNo"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:src="@drawable/no25"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:id="@+id/img_fifthNo"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:src="@drawable/no36"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:id="@+id/img_sixthNo"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:src="@drawable/no45"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="+"
+                android:textSize="40dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_weight="1"
+                />
+            <ImageView
+                android:id="@+id/img_bonusNo"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:src="@drawable/no10"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <GridView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:numColumns="1" />
+
+    </LinearLayout>
+
+</LinearLayout>
