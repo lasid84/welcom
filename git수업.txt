@@ -1,3 +1,7 @@
 git수업
+<<<<<<< HEAD
 branch1
 master
+=======
+branch2
+>>>>>>> 실험
