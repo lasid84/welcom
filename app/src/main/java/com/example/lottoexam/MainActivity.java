@@ -27,8 +27,6 @@ import com.android.volley.toolbox.Volley;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import org.json.JSONException;
-
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Date;
@@ -86,8 +84,11 @@ public class MainActivity extends AppCompatActivity {
         requestLotto();
 
 
+        SetMenuList();
 
+    }
 
+    private void SetMenuList() {
         ArrayList<ItemList> data = new ArrayList<>();
         data.add(new ItemList("1", "QR코드입력"));
         data.add(new ItemList("2", "구입번호 직접입력"));
@@ -117,7 +118,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
     }
 
     private void UpdateLottoWinDb() {
